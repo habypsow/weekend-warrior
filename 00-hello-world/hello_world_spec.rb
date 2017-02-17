@@ -1,9 +1,9 @@
 gem 'minitest', '>= 5.0.0'
 require 'minitest/pride'
 require 'minitest/autorun'
-require_relative 'hello_world'
+require_relative 'hello_world' #can add a path here as well
 
-describe "Hello World" do
+describe "Hello World" do #each it considered one test case
   it "When given no name, it should greet the world!" do
     expect(hello_world).must_equal 'Hello, World!'
   end
